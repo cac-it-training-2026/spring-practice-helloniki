@@ -12,16 +12,16 @@
 
 <p>
 <h4>フルーツショップ 商品検索 種別を選択し、商品の価格帯を入力してください。</h4>
-<form th:action="@{'TODO'}" method="get">
+<form th:action="@{/fruits_shop/named/result}" method="get">
 <table>
 <tr>
 <td>種別名</td>
-<td><select name="'TODO'">
-<option th:each="type:${'TODO'}" th:value="${'TODO'}" th:text="${'TODO'}"></option>
+<td><select name="typeId">
+<option th:each="type:${types}" th:value="${type.typeId}" th:text="${type.typeName}"></option>
 </select></td>
 </tr>
 <td>価格帯</td>
-<td><input type="number" name="'TODO'" />円以上<input type="number" name="'TODO'" />円以下
+<td><input type="number" name="minPrice" />円以上<input type="number" name="maxPrice" />円以下
 </td>
 </tr>
 

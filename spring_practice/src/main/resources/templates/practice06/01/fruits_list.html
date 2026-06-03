@@ -18,11 +18,11 @@
 <td>主な産地</td>
 <td>産地の詳細</td>
 </tr>
-<tr th:each="fruit:${'TODO'}">
-<td th:text="${'TODO'}"></td>
-<td th:text="${'TODO'}"></td>
-<td th:text="${'TODO'}"></td>
-<td th:text="${'TODO'}"></td>
+<tr th:each="fruit:${fruitarea}">
+<td th:text="${fruit.fruitId}"></td>
+<td th:text="${fruit.fruitName}"></td>
+<td th:text="${fruit.area.areaName}"></td>
+<td th:text="${fruit.area.detail}"></td>
 </tr>
 </table>
 </p>
