@@ -1,5 +1,9 @@
 package jp.co.sss.practice.p07.repository;
 
-public interface FruitsShopItemRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import jp.co.sss.practice.p07.entity.FruitsShopItem;
+
+public interface FruitsShopItemRepository extends JpaRepository<FruitsShopItem, Integer> {
 
 }

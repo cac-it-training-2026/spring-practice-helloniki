@@ -18,11 +18,11 @@
 <td>価格</td>
 <td>種別</td>
 </tr>
-<tr th:each="item:${'TODO'}">
-<td th:text="${'TODO'}"></td>
-<td th:text="${'TODO'}"></td>
-<td th:text="${'TODO'}"></td>
-<td th:text="${'TODO'}"></td>
+<tr th:each="item:${items}">
+<td th:text="${item.itemId}"></td>
+<td th:text="${item.itemName}"></td>
+<td th:text="${item.price}"></td>
+<td th:text="${item.type.typeName}"></td>
 </tr>
 </table>
 </p>
